@@ -1,0 +1,567 @@
+body {
+  margin: 0px;
+  background-color: white;
+  font-family: Montserrat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+    to remove the vertical scrollbar
+} */
+
+a {
+  text-decoration: none;
+}
+
+.logotext {
+  font-family: montserrat;
+}
+
+.header {
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  animation: aone ease-out 5s;
+  position: relative;
+  position: sticky;
+  /*for sticky*/
+  top: 0;
+  /*header*/
+  background-color: white;
+  z-index: 9999;
+  /*to make this layer always appear at the top*/
+  /*opacity: 0.95;*/
+}
+
+@keyframes aone {
+  from {
+    top: -100px;
+    /*opacity: 0;*/
+  }
+
+  to {
+    top: 0px;
+    /*opacity: 1;*/
+  }
+}
+
+.lefth {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.buttonlogo {
+  margin: 0px;
+  border: none;
+  background-color: white;
+}
+
+.righth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 260px;
+  gap: 5px;
+}
+
+.crazy {
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 150px;
+    margin-right: 150px; */
+  height: 100vh;
+}
+
+.ArnoldText {
+  display: flex;
+  justify-content: center;
+  font-family: Korbin W01 Bold;
+  font-size: 90px;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 30px;
+  animation: atwo linear both;
+  animation-timeline: view(block);
+  animation-range: cover 50% cover 85%;
+}
+
+@keyframes atwo {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  100% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+}
+
+.buttonm {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 0;
+  animation: bm ease-out 5s;
+  position: relative;
+  animation-timeline: view(block);
+  animation-range: cover 25% cover 100%;
+}
+
+@keyframes bm {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 150px;
+  }
+}
+
+.buttonmore {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 600;
+  padding: 15px 28px;
+  margin: 0px;
+  border: none;
+  background-color: black;
+  color: white;
+  /* 051320 b and ebeeed w were main colors*/
+  display: inline-block;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.buttonmore:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.buttdunno {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.logo {
+  height: 30px;
+}
+
+.buttontop {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 600;
+  padding: 15px 28px;
+  margin: 0px;
+  background-color: white;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  border: 0px solid white;
+  margin: 0px 0px;
+}
+
+.buttontop:hover {
+  background-color: black;
+  color: white;
+  border: 0px solid white;
+}
+
+.bmain {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 600;
+  padding: 15px 32px;
+  border: none;
+  background-color: white;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  border: 2px solid white;
+}
+
+.bmain:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.bros {
+  width: 1200px;
+}
+
+.btwo {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 130px; or rem for responsivity on different displays */
+  gap: 9.5rem;
+  font-family: fester_trial;
+}
+
+.btwoaa {
+  font-size: 80px;
+  font-weight: 800;
+  margin: 0px;
+  padding: 0px;
+  line-height: 75px;
+}
+
+.btwoab {
+  font-size: 19px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btwoa {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  gap: 1.7rem;
+  animation: tbtb ease-out 5s;
+  position: relative;
+  animation-timeline: view(block);
+  animation-range: cover -35% cover 50%;
+}
+
+.azaboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  animation: tbtb ease-out 5s;
+  position: relative;
+  animation-timeline: view(block);
+  animation-range: cover -35% cover 50%;
+}
+
+.azabox1 {
+  text-align: center;
+}
+
+.bthree {
+  padding: 40px;
+}
+
+.meet {
+  font-size: 35px;
+  font-weight: 700;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.allimga {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#allimg {
+  height: 100px;
+}
+
+/* .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #051320;
+}
+
+.aboutleft {
+    font-size: 60px;
+    font-weight: 600;
+    animation: athree ease-out 5s;
+    position: relative;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 50%;
+    font-family: Fester_Trial;
+}
+
+@keyframes athree {
+    0% {
+        opacity: 0;
+        bottom: -300px;
+    }
+
+    50% {}
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+.aboutleft1 {
+    font-weight: 700;
+}
+
+.aboutleft2 {
+    font-size: 10px;
+    gap: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.aboutpicl {
+    height: 80vh;
+    padding-left: 100px;
+    animation: afour ease-out 5s;
+    position: relative;
+    animation-timeline: view(block);
+    animation-range: cover -30% cover 50%;
+    align-self: flex-end;
+}
+
+.aboutpicr {
+    height: 80vh;
+    padding-right: 100px;
+    animation: afour ease-out 5s;
+    position: relative;
+    animation-timeline: view(block);
+    animation-range: cover -30% cover 50%;
+    align-self: flex-end;
+}
+
+@keyframes afour {
+    0% {
+        opacity: 0;
+        bottom: -300px;
+    }
+
+    50% {}
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+} */
+
+.testbox {
+  font-family: fester_trial;
+  background-color: black;
+  text-align: center;
+  height: 100vh;
+  align-content: center;
+  /* padding-top: 100px; */
+}
+
+.testboxes,
+.testboxest {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  animation: tbtb ease-out 5s;
+  position: relative;
+  animation-timeline: view(block);
+  animation-range: cover -35% cover 50%;
+}
+
+.testboxest {
+  margin-top: 1rem;
+}
+
+@keyframes tbtb {
+  0% {
+    opacity: 0;
+    bottom: -300px;
+  }
+
+  50% {
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+}
+
+.tbh,
+.smih {
+  font-family: fester_trial;
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  animation: tbtb ease-out 5s;
+  position: relative;
+  animation-timeline: view(block);
+  animation-range: cover -40% cover 50%;
+}
+
+.testbox1,
+.azabox1 {
+  font-family: fester_trial;
+  color: white;
+  width: 19rem;
+  height: 11rem;
+  font-weight: 700;
+  font-size: 30px;
+  border-radius: 1rem;
+  background-image: linear-gradient(to bottom right, #222122, #1c1c1c);
+  line-height: 25px;
+  /* border: white solid 4px; */
+}
+
+.tbsub {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.smih {
+  color: black;
+}
+
+.delete {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 600;
+  padding: 10px 8px;
+  margin: 0px;
+  background-color: white;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  border: 2px solid white;
+}
+
+.delete:hover {
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.smi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0;
+}
+
+.smiimg {
+  width: 80vw;
+  animation: smimgl ease-out 5s;
+  position: relative;
+  animation-timeline: view(block);
+  animation-range: cover -30% cover 50%;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+@keyframes smimgl {
+  0% {
+    opacity: 0;
+    bottom: -300px;
+  }
+
+  50% {
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+}
+
+.smiimg3 {
+  animation: smimgl ease-out 5s;
+  position: relative;
+  animation-timeline: view(block);
+  animation-range: cover -30% cover 50%;
+  display: flex;
+  gap: 40px;
+}
+
+.smiimg4 {
+  width: 38.3vw;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.yt {
+  background-color: black;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.btt {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 600;
+  padding: 15px 28px;
+  margin: 0px;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  margin: 30px 0;
+}
+
+.btt:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.footer {
+  background-color: black;
+  padding-bottom: 30px;
+}
+
+.cr {
+  font-family: fester_trial;
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0;
+}

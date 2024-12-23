@@ -1,0 +1,71 @@
+/* Header */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-image: url("hero-background.jpg");
+    background-size: cover;
+    height: 500px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-top: 100px;
+}
+
+.hero button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* About Us */
+.about {
+    padding: 40px;
+}
+
+/* Services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-item {
+    flex-basis: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contact */
+.contact {
+    padding: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
