@@ -1,0 +1,514 @@
+body{
+    font-family: poppins;
+    background-color: white;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.headerdiv{
+    position: relative;
+    position: sticky;
+    /*for sticky*/
+    top: 0;
+    /*header*/
+    z-index: 9999;
+    /*to make this layer always appear at the top*/
+    padding: 30px 0;
+
+}
+
+.header{
+    display: flex;
+    background-color: #344C36ff;
+    color: white;
+    height: 9vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 90px;
+    padding: 0 12.4px;
+    padding-left: 30px;
+    border-radius: 10000px;
+    backdrop-filter: blur(10px);
+    background-color: hsl(125, 19%, 25%, 1);
+    border: 2px solid #F9AD1Bff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header.scrolled{
+    background-color: hsl(125, 19%, 25%, 0);
+    color: #344C36ff;
+}
+
+.header.scrolledB{
+    background-color: hsl(125, 19%, 25%, 0);
+    color: white;
+}
+
+.logo{
+    height: 7vh;
+}
+
+.headerleft{
+    display: flex;
+    align-items: center;
+}
+
+.logotext{
+    display: flex;
+    font-size: 27px;
+    font-family: "DM Sans", Altone Trial;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+.headercenter{
+    color: white;
+}
+
+.butcent{
+  font-size: 17px;
+  font-family: Altone Trial;
+  letter-spacing: 0.6px;
+  padding: 0px 24px;
+  margin: 0px;
+  background-color: hsl(37, 54%, 92%, 0);
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border: 0.1px solid white;
+  border-color: hsl(37, 54%, 92%, 0);
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.butcent:hover{
+    text-decoration: underline;
+}
+
+.butcent.scrolled{
+    color: #344C36ff;
+}
+
+.butcent.scrolledB{
+    color: white;
+}
+
+.contact, .portfoliosmallbuttons{
+  font-size: 17px;
+  font-family: Altone Trial;
+  font-weight: bold;
+  letter-spacing: 0px;
+  padding: 10px 18px;
+  margin: 0px;
+  background-color: white;
+  color: #344C36ff;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 1000px;
+  transition-duration: 0.3s;
+}
+
+.contact:hover{
+    color: white;
+    background-color: #344C36ff;
+}
+
+.logotext2{
+    color: #F9AD1Bff;
+}
+
+.landing{
+    display: flex;
+    padding: 0 10vw;
+    height: 82vh;
+    justify-content: space-between;
+    animation: anione linear both;
+    animation-timeline: view(block);
+    animation-range: cover 50% cover 85%;
+}
+
+.landingleft{
+    padding-top: 9vh;
+}
+
+@keyframes anione {
+    0%{
+        opacity: 1;
+    }    
+    40% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+    100%{
+        opacity: 0;
+        filter: blur(10px);
+    }
+}
+
+.landingleft11{
+    font-size: 9.6vh;
+    font-weight: 700;
+    font-family: "DM Sans", Altone Trial;
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+
+.landingleft1{
+    display: flex;
+    gap: 10px;
+    line-height: 0;
+}
+
+.landingtext2{
+    color: #F9AD1Bff;
+    /* font-style: italic; */
+}
+
+.landingtext3{
+    line-height: 1.1;
+    margin-top: -4.0vh;
+}
+
+.landingleft2{
+    font-size: 19px;
+    font-weight: 300;
+    margin-top: -6.3vh;
+}
+
+.landingright{
+    display: flex;
+    align-items: flex-end; 
+}
+
+.landingimg{
+    height: 74vh;
+}
+
+.landingbutton1,
+.landingbutton2{
+  font-size: 17px;
+  font-family: Altone Trial;
+  font-weight: bold;
+  letter-spacing: 0px;
+  padding: 12px 20px;
+  margin: 0px;
+  background-color: #344C36ff;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #F9AD1Bff;
+  border-radius: 10000px;
+}
+
+.bar1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Altone Trial;
+    font-weight: bold;
+    letter-spacing: 0px;
+    height: 8vh;
+    gap: 5vw;
+    background-color: #F9AD1Bff;
+    color: #344C36ff;
+    font-size: 24px;
+}
+
+.sectiontitles{
+    color: #F9AD1Bff;
+    font-size: 18px;
+    font-style: italic;
+    padding: 0 12.7vw;
+    margin-bottom: -10px;
+}
+
+.service{
+    padding: 6vh 0 10vh 0;
+}
+
+.servicestop{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12.7vw;
+    align-items: center;
+}
+
+.servicestop1, .whois, .journey{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 0;
+    /* color: #344C36ff; */
+}
+
+.viewservice{
+  font-size: 17px;
+  font-family: Altone Trial;
+  font-weight: bold;
+  letter-spacing: 0px;
+  padding: 12px 20px;
+  margin: 0px;
+  background-color: #344C36ff;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #F9AD1Bff;
+  border-radius: 10000px;
+}
+
+.servicesbottom{
+    display: flex;
+    padding: 0 10vw;
+    justify-content: space-between;
+    /* color: #383838; */
+}
+
+.servicebox{
+    /* width: 22vw; */
+    /* height: 30vh; */
+    background-color: #F5F5F5;
+    border: 2.4px solid #E2E2E2;
+    border-radius: 20px;
+    padding: 3.4vh 5vw 3.4vh 2.5vw;
+}
+
+.serviceboxtitle, .eduworksection11text{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 0;
+}
+
+.eduworksection11text{
+    line-height: normal;
+}
+
+.serviceboxlearn{
+  font-size: 14px;
+  font-family: Altone Trial;
+  font-weight: bold;
+  padding: 7px 17px;
+  letter-spacing: 0.5px;
+  margin: 0px;
+  background-color: hsl(37, 54%, 92%, 0);
+  /* color: #344C36ff; */
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 10000px;
+  vertical-align: middle;
+}
+
+.arrowsvg{
+    width: 9px;
+}
+
+.servicesvg{
+    height: 5vh;
+}
+
+.about{
+    background-color: #344C36ff;
+    padding: 7vh 12.7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutimg{
+    height: 64vh;
+}
+
+.aboutdata{
+    display: flex;
+    justify-content: space-between;
+}
+
+#aboutsectiontitle{
+    padding: 0;
+}
+
+.whois{
+    display: flex;
+    gap: 13px;
+    color: white;
+}
+
+#portfoliotitle{
+    color: black;
+}
+
+.whoisarn{
+    color: #F9AD1Bff;
+    /* font-style: italic; */
+}
+
+.abouttext{
+    color: white;
+    font-size: 18px;
+    margin-top: -0.7vh;
+}
+
+.aboutdata1{
+    line-height: 7px;
+}
+
+.aboutdata1no{
+    font-size: 34px;
+    color: #F9AD1Bff;
+    font-weight: bold;
+}
+
+.aboutbutton{
+  font-size: 17px;
+  font-family: Altone Trial;
+  font-weight: bold;
+  letter-spacing: 0px;
+  padding: 12px 20px;
+  margin: 5vh 0 0 0;
+  background-color: #344C36ff;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #F9AD1Bff;
+  border-radius: 10000px;
+  transition-duration: 0.3s;
+}
+
+.aboutbutton:hover{
+    background-color: white;
+    color: #344C36ff;
+}
+
+.eduwork{
+    padding: 7vh 0;
+}
+
+#eduworksectiontitle{
+    text-align: center;
+}
+
+.journey{
+    line-height: 6px;
+    text-align: center;
+}
+
+.journeycolour{
+    color: #F9AD1Bff;
+}
+
+.eduworksection{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22vw;
+}
+
+.eduworksection1{
+    /* width: 22vw; */
+    /* height: 30vh; */
+    background-color: #F5F5F5;
+    border: 2.4px solid #E2E2E2;
+    border-radius: 20px;
+    padding: 3.4vh 5vw 3.4vh 2.5vw;
+    width: 16vw;
+}
+
+.portfolio{
+    background-color: #F5F5F5;
+}
+
+#portfoliosectiontitle{
+    padding: 0;
+    line-height: 0px;
+}
+
+.portfoliotoptext{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8vh 11vw;
+}
+
+#portfoliobutton{
+    margin-top: 1vh;
+}
+
+/* #fitcheck{
+    border: 2px solid #344C36ff;
+}
+
+#fitcheck:hover{
+    border: 2px solid #344C36ff;
+} */
+
+.portfoliotopbox, .portfoliobottombox{
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    margin: 0 0 3vw 0;
+    color: #1e1e1e;
+}
+
+.portfoliobox{
+    display: flex;
+    flex-direction: column;
+    padding: 3vh 3vh 3vh 3vh;
+    background-color: white;
+    border-radius: 30px;
+    font-family: "DM Sans", Altone Trial;
+    font-size: 27px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.portfolioimg{
+    width: 35vw;
+    border-radius: 17px 17px 0 0;
+}
+
+.portfoliosmallbuttons{
+    background-color: #F9AD1Bff;
+    color: #1e1e1e;
+    border: 0px solid;
+}
+
+.fitcheck2{
+  font-family: Altone Trial;
+  font-weight: bold;
+  letter-spacing: 0px;
+  /* padding: 10px 10px; */
+  margin: 0px;
+  background-color: #F9AD1Bff;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 100px;
+  height: 6vh;
+  width: 6vh;
+  transition-duration: 0.3s;
+}
+
+.fitcheck2:hover{
+    height: 7vh;
+    width: 7vh;
+}
+
+.fitcheck3{
+    height: 3vh;
+    vertical-align: middle;
+    transition-duration: 0.1s;
+}
+/* 
+.fitcheck3:hover{
+    height: 4vh;
+} */
+
+.portfoliosections{
+    display: flex;
+    justify-content: space-between;
+}
