@@ -21,7 +21,6 @@ html {
     z-index: 9999;
     /*to make this layer always appear at the top*/
     padding: 30px 0;
-
 }
 
 .header{
@@ -85,11 +84,13 @@ html {
   border: 0.1px solid white;
   border-color: hsl(37, 54%, 92%, 0);
   font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition-duration: 0.3s;
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
 }
 
 .butcent:hover{
     text-decoration: underline;
+    transform: scale(1.07);
 }
 
 .butcent.scrolled{
@@ -119,6 +120,7 @@ html {
 .contact:hover{
     color: white;
     background-color: #344C36ff;
+    transform: scale(1.02);
 }
 
 .logotext2{
@@ -206,6 +208,14 @@ html {
   text-decoration: none;
   border: 2px solid #F9AD1Bff;
   border-radius: 10000px;
+  transition-duration: 0.3s;
+}
+
+.landingbutton1:hover,
+.landingbutton2:hover{
+    background-color: white;
+    color: #344C36ff;
+    transform: scale(1.04);
 }
 
 .bar1{
@@ -261,6 +271,13 @@ html {
   text-decoration: none;
   border: 2px solid #F9AD1Bff;
   border-radius: 10000px;
+  transition-duration: 0.3s;
+}
+
+.viewservice:hover{
+    background-color: white;
+    color: #344C36ff;
+    transform: scale(1.04);
 }
 
 .servicesbottom{
@@ -303,6 +320,13 @@ html {
   border: 2px solid black;
   border-radius: 10000px;
   vertical-align: middle;
+  transition-duration: 0.3s;
+}
+
+.serviceboxlearn:hover{
+    color: #F5F5F5;
+    background-color: black;
+    transform: scale(1.04);
 }
 
 .arrowsvg{
@@ -384,9 +408,10 @@ html {
 .aboutbutton:hover{
     background-color: white;
     color: #344C36ff;
+    transform: scale(1.04);
 }
 
-.eduwork{
+.eduwork, .tool{
     padding: 7vh 0;
 }
 
@@ -421,6 +446,7 @@ html {
 
 .portfolio{
     background-color: #F5F5F5;
+    padding: 8vh 0 6vh 0;
 }
 
 #portfoliosectiontitle{
@@ -432,11 +458,18 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8vh 11vw;
+    padding: 0 11vw 4vh 11vw;
 }
 
 #portfoliobutton{
     margin-top: 1vh;
+    transition-duration: 0.3s;
+}
+
+#portfoliobutton:hover{
+    transform: scale(1.01);
+    background-color: #F5F5F5;
+    color: #344C36ff;
 }
 
 /* #fitcheck{
@@ -465,6 +498,12 @@ html {
     font-size: 27px;
     font-weight: bold;
     gap: 30px;
+    transition-duration: 0.3s;
+}
+
+.portfoliobox:hover{
+    transform: scale(1.04);
+    /* transform: scale(0.97); */
 }
 
 .portfolioimg{
@@ -494,8 +533,7 @@ html {
 }
 
 .fitcheck2:hover{
-    height: 7vh;
-    width: 7vh;
+    transform: scale(1.1);
 }
 
 .fitcheck3{
@@ -511,4 +549,42 @@ html {
 .portfoliosections{
     display: flex;
     justify-content: space-between;
+}
+
+.toolsvg{
+    height: 6vh;
+}
+
+.alltools{
+    display: flex;
+    align-items: center;
+    padding: 0 11vw;
+    justify-content: space-between;
+}
+
+.tools{
+    background-color: #F5F5F5;
+    border:2px solid #E2E2E2;
+    /* height: 27vh; */
+    padding: 3vh 0;
+    width: 9vw;
+    border-radius: 100px;
+    justify-items: center;
+    vertical-align: middle;
+    line-height: 0;
+}
+
+.toolsvg{
+    background-color: white;
+    padding: 3vh;
+    border-radius: 100px;
+}
+
+.toolboxsmall{
+    justify-items: center;
+}
+
+.toolothertext{
+    font-size: 2.3rem;
+    font-family: Hello Numerals, Altone Trial;
 }
