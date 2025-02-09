@@ -294,6 +294,8 @@ html {
     border: 2.4px solid #E2E2E2;
     border-radius: 20px;
     padding: 3.4vh 5vw 3.4vh 2.5vw;
+    /* -webkit-box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.96); 
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.96); */
 }
 
 .serviceboxtitle, .eduworksection11text{
@@ -587,4 +589,8 @@ html {
 .toolothertext{
     font-size: 2.3rem;
     font-family: Hello Numerals, Altone Trial;
+}
+
+::selection{
+    color: white;
 }

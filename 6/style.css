@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    height: 200vh;
+}
+
+.landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centers horizontally */
+    height: 100vh;
+    width: 98vw;
+}
+
+img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover; /* Ensures the image covers the container while cropping excess parts */
+    object-position: center; /* Adjusts the visible portion */
+    display: block;
+  }
+
+p {
+    position: absolute;
+    font-family: poppins;
+    font-size: 10rem;
+    line-height: 1;
+    font-weight: 800;
+    /* top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);Center text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+@keyframes name {
+    0% {
+      transform: translateY(300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  img {
+    animation-name: name;   /* Name of the animation */
+    animation-duration: 2s;      /* Runs for 2 seconds */
+    animation-timing-function: ease-out; /* Smooth effect */
+  }

@@ -1,0 +1,255 @@
+body {
+    margin: 0; /* Keep margin at 0 */
+    color: white;
+    font-family: "DM Sans", serif;
+    display: flex;
+    flex-direction: column; /* Essential for layout */
+    min-height: 100vh; /* Ensure body takes up full viewport height */
+}
+
+
+.background-container {
+    height: 100vh;
+    width: 100vw;
+    transform: scale(2); /* Scale up slightly */
+    position: fixed; /* Fixed to stay in background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #690000, #01004b, #00420e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite, blurEffect 15s ease infinite;
+    z-index: -1; /* Place behind other content */
+}
+
+.content {
+    position: relative; /* Needed for z-index to work */
+    z-index: 1; /* Place above the background */
+    text-align: center; /* Center text within content */
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes blurEffect {
+    0%, 100% {
+        filter: blur(20px);
+    }
+    50% {
+        filter: blur(10px);
+    }
+}
+
+.landing-page { /* New class for landing page content */
+    height: 100vh; /* Landing page takes full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Only hide overflow on the landing page */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Example of styling for other sections */
+section {
+    padding: 20px; /* Add some padding */
+    background-color: #111; /* Example background color */
+    color: white;
+}
+
+.staggered-text {
+    display: flex;
+    gap: 1vw;
+    font-size: 14vh;
+    font-weight: 900;
+}
+
+.staggered-text span {
+    display: inline-block;
+    animation: fadeInUp 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+.staggered-text span:nth-child(1) { animation-delay: 0s; }
+.staggered-text span:nth-child(2) { animation-delay: 0.4s; }
+.staggered-text.right span:nth-child(1) { animation-delay: 0.8s; }
+.staggered-text.right span:nth-child(2) { animation-delay: 1.2s; }
+.staggered-text.right span:nth-child(3) { animation-delay: 1.7s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+}
+
+.staggered-text.right {
+    justify-content: flex-end;
+}
+
+#landingImg1, #landingImg2{
+    width:30vh;
+    height: 30vh;
+    rotate: 17deg;
+    transition-duration: 0.7s;
+    border-radius: 20px;
+}
+
+#landingImg1:hover, #landingImg2:hover{
+    rotate: 0deg;
+    scale: 1.2;
+}
+
+#landingImg2{
+    rotate: -17deg;
+}
+
+body{
+    cursor: none;
+}
+
+.flair {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    border-radius: 100px;
+    z-index: 1000;box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.27);
+  }
+
+#two{
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    align-items: center;
+}
+
+#two > .left > p{
+    font-size: 1.2rem;
+}
+
+#two > .left > #title{
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 0;
+}
+
+#two > img{
+    height: 40vh;
+    border-radius: 20px;
+    position: relative;
+    animation: segundoImagen;
+    animation-timeline: view(block);
+    animation-range: cover -10% cover 110%;
+    transition-duration: 0.2s ;
+}
+
+@keyframes segundoImagen {
+    from {
+        rotate: -30deg;
+    }
+    to {
+        rotate: 10deg;
+    }
+}
+
+#two > img:hover{
+    scale: 1.04;
+}
+
+#three{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100vh;
+}
+
+
+#three > p.one{  
+    animation: slideLeftRight 0.5s ease-out forwards;
+}
+
+@keyframes slideLeftRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateX(700px);
+    }
+}
+
+#three > p.two{
+    animation: slideRightLeft 0.5s ease-out forwards;
+}
+
+@keyframes slideRightLeft {
+    to {
+        opacity: 0;
+        transform: translateX(-700px);
+    }
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.left.three {
+    animation: testingi 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes testingi {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+}
+
+.left.four{
+    animation: testingii 0.5s ease-out forwards;
+}
+
+@keyframes testingii {
+    to {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#two{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

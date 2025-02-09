@@ -1,0 +1,361 @@
+body{
+    font-family: Altone Trial, "DM Sans";
+    background-color: white;
+    margin: 0;
+    font-weight: 900;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button{
+    font-weight: 900;
+}
+
+.topbars{
+    position: absolute;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.top{
+    background-color: #f0f4f5;
+    padding: 2vh 7vw;
+    display: flex;
+    font-size: 11px;
+    color: #7d7d7d;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toptext{
+    display: flex;
+    gap: 2vw;
+}
+
+.logo {
+    height: 3vh;
+}
+
+.mainlogo{
+    height: 4vh;
+}
+
+.header{
+    display: flex;
+    color: #7d7d7d;
+    height: 9vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7vw;
+    background-color: #ffffff;
+}
+
+button{
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border: 0px solid;
+  font-family: "DM Sans", Altone Trial;
+  font-size: 15px;
+}
+
+.contact{
+  padding: 10px 18px;
+  margin: 0px;
+  color: white;
+  background-color: #03005c;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #03005c;
+  border-radius: 1000px;;
+  transition-duration: 0.3s;
+  font-family: Altone Trial, "DM Sans";
+  font-weight: bold;
+}
+
+.contact:hover{
+    color: #03005c;
+    background-color: white;
+    transform: scale(1.02);
+}
+
+.landing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vw;
+    height: 54vh;
+}
+
+.landingtext{
+    font-size: 9vh;
+}
+
+.landingimage{
+    height: 48vh;
+}
+
+.infosection{
+    border: 2px solid #000000;
+    margin: 0 14vw;
+    padding: 4vh;
+    border-radius: 14px;
+}
+
+.infoinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoinfoinfo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.infosvgs{
+    height: 3vh;
+    background-color: #f0f4f5;
+    padding: 17px 10px;
+    border-radius: 20px;
+}
+
+.infotext1{
+    font-size: 20px;
+    line-height: 0;
+    padding-bottom: 3px;
+}
+
+.infotext2{
+    font-size: 14px;
+    line-height: 0;
+    padding-bottom: 3px;
+    font-weight: 500;
+}
+
+.infobutton{
+    padding: 10px 18px;
+    margin: 0px;
+    color: #333333;
+    background-color: #f0f4f5;
+    display: inline-block;
+    text-decoration: none;
+    border: 0px solid #03005c;
+    border-radius: 1000px;
+    transition-duration: 0.3s;
+}
+  
+.infobutton:hover{
+    color: white;
+    background-color: #03005c;
+    transform: scale(1.07);
+}
+
+.infoswitch{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-bottom: 3vh;
+}
+
+.travel{
+    padding: 10vh 10vw;
+}
+
+.travelsvgbg{
+    height: 2vh;
+    background-color: #f0f4f5;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.travelimg{
+    height: 63vh;
+    border-radius: 20px;
+}
+
+.traveltitle{
+    text-align: center;
+}
+
+.traveltitle1, .traveltitle3{
+    font-size: 2vh;
+    color: #7d7d7d;
+    line-height: 0;
+}
+
+.traveltitle1{
+    letter-spacing: 4px;
+}
+
+.traveltitle2{
+    font-size: 4vh;
+    line-height: 0;
+}
+
+.traveltitle3{
+    margin-bottom: 9vh;
+}
+
+.travel2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.traveltext{
+    font-size: 2vh;
+    font-weight: 400;
+}
+
+.travellefttitle{
+    font-size: 3vh;
+    line-height: 0;
+}
+
+.travelleft1{
+    margin-bottom: 5vh;
+}
+
+.memories{
+    background-color: #f0f4f5;
+    padding: 10vh 10vw;
+}
+
+.memoriestop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.memoriestitle{
+    font-size: 4vh;
+}
+
+.memories1{
+    justify-items: center;
+    background-color: #ffffff;
+    border-radius: 1000px;
+    width: 11vw;
+    padding: 7vh;
+}
+
+.memorie1sub{
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 400;
+}
+
+.memoriessvg{
+    height: 3vh;
+    background-color: #f0f4f5;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.memoriesbottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.memories1title{
+    font-size: 3vh;
+    line-height: 0;
+}
+
+.footer{
+    background-color: #f0f4f5;
+}
+
+.subtitle{
+    font-size: 4vh;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2vw;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=email], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: Altone Trial, "DM Sans";
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 40vw;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+.footer{
+    padding: 10vh 10vw 10vh 10vw;
+}
+
+.footersec{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    padding-top: 4vh;
+}
+
+.footersubsec{
+    color: #7d7d7d;
+}
+
+.footersubsecsub{
+    color: #7d7d7d;
+}
